@@ -7,4 +7,7 @@ import preact from "@astrojs/preact";
 export default defineConfig({
   site: "https://top-quail.cloudvent.net/",
   integrations: [bookshop(), purgecss({ keyframes: false }), preact()],
+  experimental: {
+    viewTransitions: true,
+  },
 });

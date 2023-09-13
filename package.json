@@ -12,14 +12,12 @@
     "bookshop": "npx @bookshop/generate --bookshop src/components"
   },
   "dependencies": {
-    "@astrojs/preact": "^3.0.0",
+    "@astrojs/preact": "^2.2.2",
     "@bookshop/astro-bookshop": "3.6.5",
     "@bookshop/astro-engine": "3.6.5",
     "@bookshop/generate": "3.6.5",
-    "@types/react": "^18.2.21",
-    "@types/react-dom": "^18.2.7",
-    "astro": "^3.0.13",
-    "astro-purgecss": "^3.1.0",
+    "astro": "^2.10.15",
+    "astro-purgecss": "^2.3.0",
     "preact": "^10.17.1"
   },
   "devDependencies": {
