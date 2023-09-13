@@ -80,7 +80,7 @@ const canonicalURL = new URL(seo?.canonical_url ?? Astro.url.pathname, baseUrl);
     />
   </head>
   <body>
-    <Navigation transition:name="nav" client:load pageUrl={canonicalURL} />
+    <Navigation client:load pageUrl={canonicalURL} />
     <slot />
     <Footer client:visible />
   </body>

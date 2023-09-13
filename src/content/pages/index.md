@@ -52,7 +52,7 @@ content_blocks:
     description: >-
       Send more visitors to checkout. Instanly increase checkout rate & reduce cart abandonment.
     button:
-      link: /click-order
+      link: /co
       text: Learn more
     reversed: false
 
@@ -64,7 +64,7 @@ content_blocks:
       Sales analytics and automation made simple: see every sales lead in one
       place, regardless of where it came from.
     button:
-      link: /offer-everywhere
+      link: /oe
       text: Learn more
     reversed: true
 
