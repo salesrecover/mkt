@@ -2,35 +2,17 @@ import navigation from "@data/navigation.json";
 import { useState, useEffect } from "preact/hooks";
 
 export default function Navigation({ pageUrl }) {
-  const [isSticky, setSticky] = useState(false);
   const [isOpen, setOpen] = useState(false);
 
-  const handleScroll = () => {
-    setSticky(window.scrollY >= 70);
-  };
-
-  useEffect(() => {
-    window.addEventListener("scroll", handleScroll);
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
-
   const handleClick = () => setOpen((c) => !c);
-
-  // const handleClick = (event) => {
-
-  //   document.querySelector("#mainnavigationBar").classList.toggle("bg-nav");
-  //   document.querySelector("#navbarSupportedContent").classList.toggle("show");
-  // };
 
   return (
     <>
       <header>
         <nav
-          className={`navbar navbar-expand-lg position-fixed w-100 zindex-dropdown${
-            isSticky ? " sticky-nav" : ""
-          } ${isOpen ? "bg-nav" : ""}`}
+          className={`navbar navbar-expand-lg position-fixed w-100 zindex-dropdown sticky-nav ${
+            isOpen ? "bg-nav" : ""
+          }`}
           id="mainnavigationBar"
         >
           <div className="container-fluid">
@@ -45,7 +27,6 @@ export default function Navigation({ pageUrl }) {
               aria-controls="navbarSupportedContent"
               aria-expanded={isOpen}
               aria-label="Toggle navigation"
-              onClick={handleClick}
             >
               <span className="navbar-toggler-default">
                 <svg

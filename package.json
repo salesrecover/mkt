@@ -17,6 +17,7 @@
     "@bookshop/astro-engine": "3.6.5",
     "@bookshop/generate": "3.6.5",
     "astro": "^2.10.15",
+    "astro-google-fonts-optimizer": "^0.2.2",
     "astro-purgecss": "^2.3.0",
     "preact": "^10.17.1"
   },

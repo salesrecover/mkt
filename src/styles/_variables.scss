@@ -21,7 +21,7 @@ $color-primary: #3b825f;
 $color-primary-light: #e6ebf4;
 $color-primary-dark: mix($color-primary, $color-white, 12%);
 $color-gray-light: mix($color-primary, $color-white, 2%);
-$color-gray-dark: mix($color-primary, $color-white, 6%);
+$color-gray-dark: mix($color-primary, $color-white, 12%);
 //overwritten by site.json -> theme -> secondary_color if set
 $color-secondary: #fffbf3;
 $color-secondary-light: mix($color-primary, $color-white, 16%);
@@ -33,7 +33,7 @@ $color-anchor-dark: mix($color-anchor, $color-white, 30%);
 $color-background-effects: #faaa8f;
 
 $color-header: #000;
-$color-header-light: mix($color-anchor, $color-white, 4%);
+$color-header-light: mix($color-anchor, $color-white, 6%);
 $color-header-dark: mix($color-anchor, $color-white, 12%);
 $color-text: #282828;
 $color-deactive: #ababab;
