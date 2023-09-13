@@ -157,27 +157,11 @@
         color: $color-cyan;
       }
     }
-
-    .effect {
-      -webkit-mask-image: url(/images/contact/effects.png);
-      mask-image: url(/images/contact/effects.png);
-      background: $color-background-effects;
-      position: absolute;
-      top: -10%;
-      left: -14%;
-      z-index: -1;
-      mask-repeat: no-repeat;
-      -webkit-mask-repeat: no-repeat;
-      mask-size: contain;
-      -webkit-mask-size: contain;
-      width: 115%;
-      height: 100%;
-    }
   }
 }
 
-.contact-hero+.contact {
-  .contact-form>form {
+.contact-hero + .contact {
+  .contact-form > form {
     margin-top: -$base-margin * 28.2;
 
     @include media-breakpoint-down-xl {

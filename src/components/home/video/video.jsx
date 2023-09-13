@@ -1,4 +1,4 @@
-export default function HomeVideo(block) {
+export default function HomeVideo() {
   return (
     <section className="video pb-xxl-22 pb-lg-18 pb-12">
       <div className="container">
@@ -7,9 +7,9 @@ export default function HomeVideo(block) {
             <div className="banner">
               <div className="rounded-box">
                 <img
-                  src={block.image}
+                  src="/images/video/video-thum.jpg"
                   className="w-100"
-                  alt={block.image_alt}
+                  alt="Video Thumbnail"
                   loading="lazy"
                 />
               </div>
@@ -17,7 +17,7 @@ export default function HomeVideo(block) {
               <div className="effect-two"></div>
               <div className="video-iframe d-flex align-items-center justify-content-center">
                 <div className="video-icon me-sm-9 me-8">
-                  <a className="popup-vimeo" href={block.video_url}>
+                  <a className="popup-vimeo" href="https://vimeo.com/45830194">
                     <svg
                       width="28"
                       height="32"

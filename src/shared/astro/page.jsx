@@ -16,6 +16,8 @@ export default function Page({ contentBlocks }) {
     <main>
       {contentBlocks.map((block, i) => {
         const Component = components[block._bookshop_name];
+        if (!Component) return null;
+
         return <Component {...block} key={i} />;
       })}
     </main>

@@ -6,8 +6,7 @@ import { getCollection, getEntryBySlug } from "astro:content";
 
 export async function getStaticPaths({ paginate }: { paginate: Function }) {
   const posts = await getCollection("blog");
-  const page = await getEntryBySlug("pages", "blog");
-  return paginate(posts, { pageSize: page.data.page_size });
+  return paginate(posts, { pageSize: 12 });
 }
 
 const page = await getEntryBySlug("pages", "blog");
@@ -17,6 +16,6 @@ const { data: posts } = pagination;
 ---
 
 <Layout {...frontmatter}>
-  <BlogList posts={posts} page={page.data} />
+  <BlogList posts={posts} />
   <BlogPagination pagination={pagination} />
 </Layout>

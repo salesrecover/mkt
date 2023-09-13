@@ -3,7 +3,7 @@ import Page from "@shared/page";
 import Layout, { SEOProps } from "./Layout.astro";
 
 type Props = {
-  frontmatter: {
+  frontmatter?: {
     title: string;
     content_blocks: Array<Record<string, any>>;
     seo?: SEOProps;

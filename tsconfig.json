@@ -14,9 +14,9 @@
       ],
       "@layouts/*": [
         "src/layouts/*"
-      ],
+      ]
     },
     "jsx": "react-jsx",
-    "jsxImportSource": "react"
+    "jsxImportSource": "preact"
   }
 }

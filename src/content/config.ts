@@ -41,11 +41,11 @@ const pageSchema = z.object({
 });
 
 const paginatedCollectionSchema = z.object({
-  _schema: z.literal("paginated_collection"),
+  _schema: z.any().optional(),
   hidden: z.literal(true).optional().default(true),
-  title: z.string(),
-  description: z.string().optional(),
-  page_size: z.number().positive(),
+  title: z.string().optional(),
+  description: z.undefined(),
+  page_size: z.undefined(),
   content_blocks: z.undefined(),
   seo: seoSchema,
 });

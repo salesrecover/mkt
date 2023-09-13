@@ -1,17 +1,38 @@
-export default function AboutTeam(block) {
+const MEMBERS = [
+  {
+    name: "Daniel",
+    designation: "Engineer",
+    image: "/images/team/1.jpg",
+    image_alt: "Team member: Anh Le",
+  },
+  {
+    name: "Viet",
+    designation: "Marketer",
+    image: "/images/team/3.jpg",
+    image_alt: "Team member: Viet",
+  },
+  {
+    name: "Thao",
+    designation: "Product Manager",
+    image: "/images/team/4.jpg",
+    image_alt: "Team member: Thao",
+  },
+];
+
+export default function AboutTeam() {
   return (
     <div className="team">
       <div className="container">
         <div className="row">
           <div className="col-lg-10 col-xl-7 mx-auto">
             <div className="section-header">
-              <h2>{block.title}</h2>
+              <h2>Our team</h2>
             </div>
           </div>
         </div>
         <div className="row">
-          {block.team_members.map((member, i) => (
-            <div className="col-lg-3 col-md-6" key={i}>
+          {MEMBERS.map((member, i) => (
+            <div className="col-lg-4 col-md-6" key={i}>
               <div className="team-member">
                 <div className="team-member-thumb rounded-box">
                   <img

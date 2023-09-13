@@ -1,9 +1,12 @@
 ---
+import "../styles/bootstrap.min.css";
 import "../styles/theme.scss";
 import Footer from "@components/layouts/footer";
 import Navigation from "@components/layouts/navigation";
 import { SEO } from "astro-seo";
 import site from "@data/site.json";
+
+import { ViewTransitions, fade } from "astro:transitions";
 
 export interface SEOProps {
   page_description: string | null;
@@ -36,9 +39,12 @@ const canonicalURL = new URL(seo?.canonical_url ?? Astro.url.pathname, baseUrl);
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link href="/vendor/bootstrap/bootstrap.min.css" rel="stylesheet" />
-    <link href="/vendor/phosphor-icons/css/phosphor.css" rel="stylesheet" />
-    <link href="/vendor/magnific-popup/magnific-popup.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon" />
     <link rel="icon" href="/images/favicon.png" type="image/x-icon" />
     <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
@@ -73,17 +79,11 @@ const canonicalURL = new URL(seo?.canonical_url ?? Astro.url.pathname, baseUrl);
         card: "summary_large_image",
       }}
     />
+    <ViewTransitions />
   </head>
   <body>
     <Navigation client:load pageUrl={canonicalURL} />
     <slot />
-    <Footer />
-
-    <script src="/vendor/jQuery/jquery.min.js" is:inline></script>
-    <script src="/vendor/bootstrap/bootstrap.bundle.min.js" is:inline></script>
-    <script src="/vendor/counter-up/countup.js" is:inline></script>
-    <script src="/vendor/magnific-popup/magnific-popup.min.js" is:inline
-    ></script>
-    <script src="/js/script.js" async></script>
+    <Footer client:visible />
   </body>
 </html>

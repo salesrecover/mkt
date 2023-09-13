@@ -1,5 +1,5 @@
-import { useEffect, useState } from "react";
 import navigation from "@data/navigation.json";
+import { useState, useEffect } from "preact/hooks";
 
 export default function Navigation({ pageUrl }) {
   const [isSticky, setSticky] = useState(false);
@@ -31,7 +31,7 @@ export default function Navigation({ pageUrl }) {
         >
           <div className="container-fluid">
             <a className="navbar-brand" href="/">
-              <img src={navigation.logo} alt="Nav-Logo" />
+              <img src={navigation.logo} alt="Nav-Logo" lozing="lazy" />
             </a>
             <button
               className="navbar-toggler"

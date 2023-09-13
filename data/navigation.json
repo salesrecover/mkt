@@ -6,28 +6,20 @@
       "text": "Home"
     },
     {
-      "link": "/features/",
-      "text": "Features"
+      "link": "/click-order/",
+      "text": "ClickOrder"
     },
     {
-      "link": "/pricing/",
-      "text": "Pricing"
-    },
-    {
-      "link": "/about/",
-      "text": "About"
+      "link": "/offer-everywhere/",
+      "text": "OfferEverywhere"
     },
     {
       "link": "/blog/",
       "text": "Blog"
-    },
-    {
-      "link": "/contact/",
-      "text": "Contact"
     }
   ],
   "btn": {
-    "link": "/signup/",
+    "link": "https://apps.shopify.com/partners/salesrecover",
     "text": "Get Started"
   }
 }

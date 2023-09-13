@@ -8,7 +8,12 @@ export default function GlobalError(block) {
         <div className="row">
           <div className="col-lg-12">
             <div className="error-content text-center">
-              <img src={block.image} className="" alt={block.image_alt} />
+              <img
+                src={block.image}
+                className=""
+                alt={block.image_alt}
+                loading="eager"
+              />
               <h3
                 className="my-5"
                 dangerouslySetInnerHTML={{
