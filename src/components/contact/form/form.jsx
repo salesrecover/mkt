@@ -27,7 +27,7 @@ export default function ContactForm() {
 
           <div className="col-lg-6 order-1 order-lg-2">
             <div className="contact-form">
-              <form method="post">
+              <form method="post" name="contact" netlify>
                 <h3>Say Hello</h3>
                 <div className="col-md-12">
                   <label htmlFor="Name" className="label">
