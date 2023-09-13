@@ -16,14 +16,11 @@
     "@bookshop/astro-bookshop": "3.6.5",
     "@bookshop/astro-engine": "3.6.5",
     "@bookshop/generate": "3.6.5",
-    "@makotot/ghostui": "^2.0.0",
     "@types/react": "^18.2.21",
     "@types/react-dom": "^18.2.7",
     "astro": "^3.0.13",
     "astro-purgecss": "^3.1.0",
-    "preact": "^10.17.1",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "preact": "^10.17.1"
   },
   "devDependencies": {
     "astro-seo": "^0.8.0",

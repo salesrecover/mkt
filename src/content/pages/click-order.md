@@ -13,7 +13,7 @@ content_blocks:
     title: Run the best campaigns
     description: Sendit will change the way you think about email and marketing automation.
     button:
-      link: /signup
+      link: /
       text: Get on Shopify App Store
     image: /images/feature/feature-hero.png
     image_alt: Charts
@@ -29,7 +29,7 @@ content_blocks:
     title: Simply click and send
     description: "Make your message stand out, thanks to the guided copywriting and design features, triggering a positive response from your customers."
     button:
-      link: /signup
+      link: /
       text: Try This Free
     reversed: false
 
@@ -39,7 +39,7 @@ content_blocks:
     title: See every lead in one place
     description: "Sales analytics and automation made simple: see every sales lead in one place, regardless of where it came from."
     button:
-      link: /signup
+      link: /
       text: Try This Free
     reversed: true
 
@@ -49,7 +49,7 @@ content_blocks:
     title: Free templates to get you started
     description: "Sendit is used by everyone from small businesses to fortune 500 companies. Browse our collection of email marketing templates and start sending beautiful emails in minutes."
     button:
-      link: /signup
+      link: /
       text: Try This Free
     reversed: false
 
@@ -86,7 +86,7 @@ content_blocks:
           - item: Unlimited activity history
             active_feature: false
         button:
-          link: /signup
+          link: /
           text: Try This Free
       - tier: Pro
         highlight_tier: true
@@ -115,7 +115,7 @@ content_blocks:
           - item: Unlimited activity history
             active_feature: false
         button:
-          link: /signup
+          link: /
           text: Try This Free
       - tier: Business
         highlight_tier: false
@@ -144,7 +144,7 @@ content_blocks:
           - item: Unlimited activity history
             active_feature: true
         button:
-          link: /signup
+          link: /
           text: Try This Free
 
   - _bookshop_name: global/faq

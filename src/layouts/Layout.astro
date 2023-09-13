@@ -35,8 +35,9 @@ const canonicalURL = new URL(seo?.canonical_url ?? Astro.url.pathname, baseUrl);
 ---
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" transition:animate={fade({ duration: 500 })}>
   <head>
+    <ViewTransitions />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -79,10 +80,9 @@ const canonicalURL = new URL(seo?.canonical_url ?? Astro.url.pathname, baseUrl);
         card: "summary_large_image",
       }}
     />
-    <ViewTransitions />
   </head>
   <body>
-    <Navigation client:load pageUrl={canonicalURL} />
+    <Navigation transition:name="nav" client:load pageUrl={canonicalURL} />
     <slot />
     <Footer client:visible />
   </body>

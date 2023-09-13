@@ -7,10 +7,10 @@
   overflow: hidden;
 
   .section-header {
-    padding-bottom: $base-padding * 10;
+    padding-bottom: $base-padding * 6;
 
     @include media-breakpoint-down-xxl {
-      padding-bottom: $base-padding * 7;
+      padding-bottom: $base-padding * 5;
     }
 
     @include media-breakpoint-down-sm {

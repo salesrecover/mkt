@@ -3,6 +3,7 @@ import { useState, useEffect } from "preact/hooks";
 
 export default function Navigation({ pageUrl }) {
   const [isSticky, setSticky] = useState(false);
+  const [isOpen, setOpen] = useState(false);
 
   const handleScroll = () => {
     setSticky(window.scrollY >= 70);
@@ -15,10 +16,13 @@ export default function Navigation({ pageUrl }) {
     };
   }, []);
 
-  const handleClick = (event) => {
-    const navbar = $("#mainnavigationBar");
-    navbar.toggleClass("bg-nav");
-  };
+  const handleClick = () => setOpen((c) => !c);
+
+  // const handleClick = (event) => {
+
+  //   document.querySelector("#mainnavigationBar").classList.toggle("bg-nav");
+  //   document.querySelector("#navbarSupportedContent").classList.toggle("show");
+  // };
 
   return (
     <>
@@ -26,7 +30,7 @@ export default function Navigation({ pageUrl }) {
         <nav
           className={`navbar navbar-expand-lg position-fixed w-100 zindex-dropdown${
             isSticky ? " sticky-nav" : ""
-          }`}
+          } ${isOpen ? "bg-nav" : ""}`}
           id="mainnavigationBar"
         >
           <div className="container-fluid">
@@ -39,7 +43,7 @@ export default function Navigation({ pageUrl }) {
               data-bs-toggle="collapse"
               data-bs-target="#navbarSupportedContent"
               aria-controls="navbarSupportedContent"
-              aria-expanded="false"
+              aria-expanded={isOpen}
               aria-label="Toggle navigation"
               onClick={handleClick}
             >
@@ -109,7 +113,7 @@ export default function Navigation({ pageUrl }) {
               </span>
             </button>
             <div
-              className="collapse navbar-collapse"
+              className={`collapse navbar-collapse ${isOpen ? "show" : ""}`}
               id="navbarSupportedContent"
             >
               <ul className="navbar-nav mx-auto mb-20 mb-lg-0">
