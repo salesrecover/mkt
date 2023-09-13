@@ -17,7 +17,7 @@ export default function Navigation({ pageUrl }) {
         >
           <div className="container-fluid">
             <a className="navbar-brand" href="/">
-              <img src={navigation.logo} alt="Nav-Logo" lozing="lazy" />
+              <img src={navigation.logo} alt="Nav-Logo" loading="eager" />
             </a>
             <button
               className="navbar-toggler"
