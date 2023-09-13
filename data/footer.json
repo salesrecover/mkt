@@ -11,11 +11,11 @@
           "text": "Home"
         },
         {
-          "link": "/click-order/",
+          "link": "/co/",
           "text": "ClickOrder"
         },
         {
-          "link": "/offer-everywhere/",
+          "link": "/oe/",
           "text": "OfferEverywhere"
         }
       ]

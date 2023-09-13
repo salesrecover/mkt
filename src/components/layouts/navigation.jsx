@@ -27,6 +27,7 @@ export default function Navigation({ pageUrl }) {
               aria-controls="navbarSupportedContent"
               aria-expanded={isOpen}
               aria-label="Toggle navigation"
+              onClick={handleClick}
             >
               <span className="navbar-toggler-default">
                 <svg
