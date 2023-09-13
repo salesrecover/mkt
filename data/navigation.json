@@ -6,15 +6,15 @@
       "text": "Home"
     },
     {
-      "link": "/co",
+      "link": "/co/",
       "text": "ClickOrder"
     },
     {
-      "link": "/oe",
+      "link": "/oe/",
       "text": "OfferEverywhere"
     },
     {
-      "link": "/blog",
+      "link": "/blog/",
       "text": "Blog"
     }
   ],
