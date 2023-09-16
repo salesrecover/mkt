@@ -12,31 +12,6 @@ seo:
 content_blocks:
   - _bookshop_name: home/hero
 
-  # - _bookshop_name: global/counter
-  #   title: Scale your
-  #   title_suffix: Business
-  #   description: >-
-  #     We have an extensive library of pre-written sales emails, proven marketing
-  #     templates, and more to get you started on your next project.
-  #   alternate_style: false
-  #   numbers:
-  #     - prefix: $
-  #       number: 200
-  #       suffix: m
-  #       text: Venture capital raised
-  #     - prefix:
-  #       number: 2016
-  #       suffix:
-  #       text: Established in
-  #     - prefix:
-  #       number: 40
-  #       suffix: +
-  #       text: Amazing team members
-  #     - prefix:
-  #       number: 4322
-  #       suffix: +
-  #       text: Active users and growing
-
   # - _bookshop_name: home/video
 
   - _bookshop_name: global/header
@@ -44,6 +19,7 @@ content_blocks:
     title_suffix: Applications
     remove_top_padding: false
     description: ''
+    id: home-header
 
   - _bookshop_name: global/feature
     image: /images/feature/feature-card-one.png
@@ -53,7 +29,7 @@ content_blocks:
       Send more visitors to checkout. Instanly increase checkout rate & reduce cart abandonment.
     button:
       link: /co
-      text: Learn more
+      text: View app
     reversed: false
 
   - _bookshop_name: global/feature
@@ -65,7 +41,7 @@ content_blocks:
       place, regardless of where it came from.
     button:
       link: /oe
-      text: Learn more
+      text: View app
     reversed: true
 
   - _bookshop_name: global/testimonial

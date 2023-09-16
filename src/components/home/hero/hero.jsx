@@ -17,7 +17,7 @@ export default function HomeHero() {
                 </p>
               </div>
               <div className="">
-                <a href="/" className="btn btn-primary btn-lg">
+                <a href="#home-header" className="btn btn-primary btn-lg">
                   View our apps
                 </a>
               </div>

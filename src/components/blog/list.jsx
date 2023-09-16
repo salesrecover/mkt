@@ -10,13 +10,11 @@ export default function BlogList({ posts }) {
           <div className="row">
             <div className="col-xl-8 col-lg-10 mx-auto">
               <div className="blog-hero-content">
-                <h1 className="blog-hero-title">
-                  Resources for makers to learn, sell & grow
-                </h1>
+                <h1 className="blog-hero-title">Shopify best practices</h1>
                 <p>
-                  We believe that a good email marketing strategy is the key to
-                  growth. So we're helping you grow your business with tools and
-                  resources that make email marketing easy.
+                  Guides, product updates, and research from SalesRecover to
+                  help merchant improve the checkout experience and increase
+                  conversions
                 </p>
               </div>
             </div>

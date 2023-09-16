@@ -10,16 +10,16 @@ seo:
   no_index: false
 content_blocks:
   - _bookshop_name: global/hero
-    title: Run the best campaigns
-    description: Sendit will change the way you think about email and marketing automation.
+    title: ClickOrder - One Click Checkout
+    description: Send more visitors to checkout. Instanly increase checkout rate & reduce cart abandonment.
     button:
-      link: /
+      link: https://apps.shopify.com/clickorder
       text: Get on Shopify App Store
     image: /images/feature/feature-hero.png
     image_alt: Charts
 
   - _bookshop_name: global/header
-    title: "Sendit "
+    title: "ClickOrder "
     title_suffix: Features
     description: Sendit is the most complete solution to create beautiful email designs, manage mails and send them out at the best price.
 

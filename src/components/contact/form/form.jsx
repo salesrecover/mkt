@@ -6,10 +6,8 @@ export default function ContactForm() {
           <div className="col-lg-5 me-auto order-2 order-lg-1">
             <div className="contact-form-Information">
               <div className="address">
-                <h3>Our office</h3>
-                <p>Hanoi, VN</p>
                 <div className="item">
-                  <h3>Email</h3>
+                  <h3>Or email us at</h3>
                   <a href="mailto:team@salesrecover.com">
                     <span>team@salesrecover.com</span>
                     <span>

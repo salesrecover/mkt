@@ -3,6 +3,7 @@ const md = new MarkdownIt({ html: true });
 
 export default function GlobalFaqItem({ faq, i }) {
   const handleClick = (event) => {
+    console.log(123123);
     var current = document.getElementsByClassName("shows");
     if (current[0]) {
       current[0].classList.remove("shows");
